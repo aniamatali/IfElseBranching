@@ -1,32 +1,58 @@
 using System;
 
-class Grades
+class Temperature
 {
-  static void Main()
-  {
-    Console.WriteLine("What was your last grade?");
-    string inputGrade = Console.ReadLine();
+    static void Main()
+    {
+      Console.WriteLine("Whats the temp?");
+      string InputTemp = Console.ReadLine();
 
-    bool a = inputGrade == "a";
-    bool b = inputGrade == "b";
-    bool c = inputGrade == "c";
-    bool d = inputGrade == "d";
-    bool f = inputGrade == "f";
+      int intInputTemp = int.Parse(InputTemp);
 
-    if (a || b)
-    {
-      Console.WriteLine("Good job");
+      bool cold = intInputTemp <= 50;
+      bool hot = intInputTemp >= 51;
+
+      if (cold)
+      {
+        Console.WriteLine("Wear a sweater");
+      }
+      else if (hot)
+      {
+        Console.WriteLine("Dont wear a sweater");
+      }
     }
-    else if (c || d)
-    {
-      Console.WriteLine("okay job");
-    }
-    else
-    {
-      Console.WriteLine("bad job");
-    }
-    }
-  }
+}
+
+
+// using System;
+//
+// class Grades
+// {
+//   static void Main()
+//   {
+//     Console.WriteLine("What was your last grade?");
+//     string inputGrade = Console.ReadLine();
+//
+//     bool a = inputGrade == "a";
+//     bool b = inputGrade == "b";
+//     bool c = inputGrade == "c";
+//     bool d = inputGrade == "d";
+//     bool f = inputGrade == "f";
+//
+//     if (a || b)
+//     {
+//       Console.WriteLine("Good job");
+//     }
+//     else if (c || d)
+//     {
+//       Console.WriteLine("okay job");
+//     }
+//     else
+//     {
+//       Console.WriteLine("bad job");
+//     }
+//     }
+//   }
 
 
 
